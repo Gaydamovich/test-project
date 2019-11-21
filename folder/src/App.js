@@ -3,7 +3,9 @@ import Info from './components/info';
 import Form from './components/form';
 import Weather from './components/Weather';
 
+
 const API_KEY = "f74e9feab96e7ff568de1200cd9cdb77";
+
 
 class App extends React.Component {
 
@@ -14,25 +16,48 @@ class App extends React.Component {
     pressure: undefined,
     sunset: undefined,
     error: undefined
-  }
-
+  };
+  
+  getWeather = async () =>{
+     fetch('https://api.ipgeolocation.io/ipgeo?apiKey=50a5b791e5c6400da962f8548caac2c7&lang=ru')
+       .then(response => response.json())
+       .then(data => data.city)
+       .then(city => {
+         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
+           .then(response => response.json())
+           .then(data => {
+             let sunset = data.sys.sunset * 1000;
+             let date = new Date();
+             date.setTime(sunset);
+             let sunset_date = date.getHours() + ":" + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes());
+  
+             this.setState({
+               temp: Math.floor(data.main.temp) + '°',
+               city: data.name,
+               country: data.sys.country,
+               pressure: data.main.pressure,
+               sunset: sunset_date,
+               error: undefined
+             })
+           })
+       })
+   }
+  
   gettingWeather = async (e) => {
     e.preventDefault();
-    var city = e.target.elements.city.value;
-
+    let city = e.target.elements.city.value;
+    
     if (city) {
-
       const api_url = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       const data = await api_url.json();
 
-      var sunset = data.sys.sunset * 1000;
-      var date = new Date();
+      let sunset = data.sys.sunset * 1000;
+      let date = new Date();
       date.setTime(sunset);
-      var sunset_date = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-
-console.log(data);
+      let sunset_date = date.getHours() + ":" + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes());
+      
       this.setState({
-        temp: data.main.temp,
+        temp: Math.floor(data.main.temp) + '°',
         city: data.name,
         country: data.sys.country,
         pressure: data.main.pressure,
@@ -49,19 +74,16 @@ console.log(data);
         error: "Введите название города"
       });
     }
-    //console.log(sunset_date);
-  }
+  };
 
   render() {
     return (
-
-
       <div className="wrapper">
         <div className="main">
           <div className="container">
             <div className="row">
               <div className="col-sm-5 info">
-                <Info />
+                <Info getWeather = {this.getWeather}/>
               </div>
               <div className="col-sm-7 form">
               <Form weatherMethod = {this.gettingWeather}/>

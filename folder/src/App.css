@@ -2,9 +2,7 @@
 
 body {
   font-family: "Open Sans", serif;
-  background-image: url(img/123.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #f7fcee;
 }
 
 .wrapper {
@@ -12,41 +10,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background: rgba(190,250,215,1);
-  background: -moz-linear-gradient(left, rgba(190,250,215,1) 0%, rgba(190,250,215,1) 1%, rgba(203,139,240,1) 38%, rgba(39,185,230,1) 89%, rgba(163,176,240,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(190,250,215,1)), color-stop(1%, rgba(190,250,215,1)), color-stop(38%, rgba(203,139,240,1)), color-stop(89%, rgba(39,185,230,1)), color-stop(100%, rgba(163,176,240,1)));
-  background: -webkit-linear-gradient(left, rgba(190,250,215,1) 0%, rgba(190,250,215,1) 1%, rgba(203,139,240,1) 38%, rgba(39,185,230,1) 89%, rgba(163,176,240,1) 100%);
-  background: -o-linear-gradient(left, rgba(190,250,215,1) 0%, rgba(190,250,215,1) 1%, rgba(203,139,240,1) 38%, rgba(39,185,230,1) 89%, rgba(163,176,240,1) 100%);
-  background: -ms-linear-gradient(left, rgba(190,250,215,1) 0%, rgba(190,250,215,1) 1%, rgba(203,139,240,1) 38%, rgba(39,185,230,1) 89%, rgba(163,176,240,1) 100%);
-  background: linear-gradient(to right, rgba(190,250,215,1) 0%, rgba(190,250,215,1) 1%, rgba(203,139,240,1) 38%, rgba(39,185,230,1) 89%, rgba(163,176,240,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#befad7', endColorstr='#a3b0f0', GradientType=1 );
-  background-size: cover; */
-
 }
 
 .main {
-  height: 55vh;
+  /*height: 55vh;*/
   background: #2a6bb1;
-  box-shadow: 0px 2px 80px -20px rgba(0,0,0,0.5);
-  width: 60%;
+  box-shadow: 10px 20px 80px 10px rgba(0,0,0,0.5);
   margin: 0 auto;
 }
 
 .info {
   height: 55vh;
-  background: url("img/1.jpg") center center no-repeat;
-
-  background-color: #484747;
-  border: 2px solid #1f1f1f;
-  border-right: 2px solid #131e29;
-  background-size: cover;
+  background-color: #353434;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #000;
 }
+
 #infor {
   width: 100%;
 }
@@ -54,20 +36,16 @@ body {
   height: 55vh;
   padding-top: 100px;
   padding-left: 50px;
-  border-top: 2px solid #113a65;
-  border-bottom: 2px solid #113a65;
-  border-right: 2px solid #113a65;
-  background: #b1eadc;
-
+  background: #6a6b69;
 }
 
 input[type="text"] {
-  background-color: transparent;
+  background-color: #6a6b69;
   border: 0;
-  border-bottom: solid 2px #113a65;
+  border-bottom: 1px solid #f3f9ec;
   width: 50%;
   padding-bottom: 4px;
-  color: #fff;
+  color: #222222;
   font-weight: lighter;
   margin-bottom: 30px;
   margin-right: 20px;
@@ -75,58 +53,95 @@ input[type="text"] {
   outline: none;
 }
 
-input::-webkit-input-placeholder {
-  color: #103a65;
+input[type="text"]:active {
+  background-color: #6a6b69;
 }
 
-input::-moz-placeholder {
-  color: #103a65;
-}
-
-button {
-  border: 2px solid #103a65;
-  border-bottom: 4px solid #103a65;
+.btn_get {
   padding: 8px 20px;
   margin: 0 2px;
   border-radius: 2px;
   cursor: pointer;
-  background-color: #235d9c;
+  background-color: #3bcb91;
   color: #fff;
   outline: none!important;
 }
 
-button:hover {
-  border-bottom: 2px solid #103a65;
-  position: relative;
-  top: 2px;
+.btn_get:hover {
+  background-color: #36b984;
 }
 
-button:active {
-  border-bottom: 2px solid transparent;
-  border-color: transparent;
-  position: relative;
-  top: 2px;
+.btn_get:active {
+  background-color: #31a777;
+}
+
+.btn {
+  background-color: #ff8952;
+  color: white;
+  font-weight: bolder;
+  outline: none!important;
+}
+
+.btn:hover {
+  background-color: #ff7941;
+  color: white ;
+}
+
+.btn:active {
+  background-color: #ff6f23;
+  color: white;
 }
 
 .info h2 {
-  font-size: 3vw;
+  font-size: 2.5rem;
   color: gray;
   padding: 5%;
 }
 
 .info p {
-  color: black;
+  color: #d46f39;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.5rem;
+  opacity: .6;
 }
+
 
 .infoWeath {
   width: 60%;
-  font-size: 1.3vw;
-  color: black;
+  font-size: 1.3rem;
+  color: #fbfbfb;
+}
+
+.infoWeath span {
+  font-weight: bold;
+  color: #ffc296;
 }
 
 .error {
   color: #041f3c;
   font-weight: bold;
+}
+
+@media screen and (max-width: 375px){
+
+  .infoWeath {
+    width: 100%;
+    text-align: left;
+    font-size: .8rem;
+    color: #fbfbfb;
+  }
+
+  .btn_get {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 2px 20px;
+    font-size: 0.9rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+  }
+
 }
