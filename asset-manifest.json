@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Gaydamovich/test-project/folder/static/css/main.511acf54.chunk.css",
+    "main.js": "/Gaydamovich/test-project/folder/static/js/main.f70c41d7.chunk.js",
+    "main.js.map": "/Gaydamovich/test-project/folder/static/js/main.f70c41d7.chunk.js.map",
+    "runtime~main.js": "/Gaydamovich/test-project/folder/static/js/runtime~main.ef0f07bf.js",
+    "runtime~main.js.map": "/Gaydamovich/test-project/folder/static/js/runtime~main.ef0f07bf.js.map",
+    "static/css/2.0624914a.chunk.css": "/Gaydamovich/test-project/folder/static/css/2.0624914a.chunk.css",
+    "static/js/2.f27d4a19.chunk.js": "/Gaydamovich/test-project/folder/static/js/2.f27d4a19.chunk.js",
+    "static/js/2.f27d4a19.chunk.js.map": "/Gaydamovich/test-project/folder/static/js/2.f27d4a19.chunk.js.map",
+    "index.html": "/Gaydamovich/test-project/folder/index.html",
+    "precache-manifest.3144138342f9edf05ab5cc3ec4530795.js": "/Gaydamovich/test-project/folder/precache-manifest.3144138342f9edf05ab5cc3ec4530795.js",
+    "service-worker.js": "/Gaydamovich/test-project/folder/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Gaydamovich/test-project/folder/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.511acf54.chunk.css.map": "/Gaydamovich/test-project/folder/static/css/main.511acf54.chunk.css.map"
+  }
+}
