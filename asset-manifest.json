@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/test-project/folder/static/css/main.511acf54.chunk.css",
-    "main.js": "/test-project/folder/static/js/main.f25a337e.chunk.js",
-    "main.js.map": "/test-project/folder/static/js/main.f25a337e.chunk.js.map",
-    "runtime~main.js": "/test-project/folder/static/js/runtime~main.3101cc65.js",
-    "runtime~main.js.map": "/test-project/folder/static/js/runtime~main.3101cc65.js.map",
-    "static/css/2.0624914a.chunk.css": "/test-project/folder/static/css/2.0624914a.chunk.css",
-    "static/js/2.f27d4a19.chunk.js": "/test-project/folder/static/js/2.f27d4a19.chunk.js",
-    "static/js/2.f27d4a19.chunk.js.map": "/test-project/folder/static/js/2.f27d4a19.chunk.js.map",
-    "index.html": "/test-project/folder/index.html",
-    "precache-manifest.c1ad401fee88fdc61c08060a60b7a54a.js": "/test-project/folder/precache-manifest.c1ad401fee88fdc61c08060a60b7a54a.js",
-    "service-worker.js": "/test-project/folder/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/test-project/folder/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.511acf54.chunk.css.map": "/test-project/folder/static/css/main.511acf54.chunk.css.map"
+    "main.css": "/test-project/static/css/main.511acf54.chunk.css",
+    "main.js": "/test-project/static/js/main.419159f4.chunk.js",
+    "main.js.map": "/test-project/static/js/main.419159f4.chunk.js.map",
+    "runtime~main.js": "/test-project/static/js/runtime~main.8e57902c.js",
+    "runtime~main.js.map": "/test-project/static/js/runtime~main.8e57902c.js.map",
+    "static/css/2.0624914a.chunk.css": "/test-project/static/css/2.0624914a.chunk.css",
+    "static/js/2.f27d4a19.chunk.js": "/test-project/static/js/2.f27d4a19.chunk.js",
+    "static/js/2.f27d4a19.chunk.js.map": "/test-project/static/js/2.f27d4a19.chunk.js.map",
+    "index.html": "/test-project/index.html",
+    "precache-manifest.6d5376341920413f43fabbb32b0898bc.js": "/test-project/precache-manifest.6d5376341920413f43fabbb32b0898bc.js",
+    "service-worker.js": "/test-project/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/test-project/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.511acf54.chunk.css.map": "/test-project/static/css/main.511acf54.chunk.css.map"
   }
 }
